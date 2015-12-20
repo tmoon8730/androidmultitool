@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/welcome_message"
+        android:textColor="@color/colorIcons"
+        android:textSize="@dimen/title_size"/>
+
+    <Button
+        android:id="@+id/presentTellerButton"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_below="@id/descriptionText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/button_top_margin"
+        android:text="@string/presentTellerButton"
+        android:background="@color/colorAccent"/>
+
+    <Button
+        android:id="@+id/mailAppButton"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_below="@id/presentTellerButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/button_top_margin"
+        android:text="@string/mailAppButton"
+        android:background="@color/colorAccent"/>
+
+    <Button
+        android:id="@+id/simpleDatabaseButton"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_below="@id/mailAppButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/button_top_margin"
+        android:text="@string/simpleDatabaseButton"
+        android:background="@color/colorAccent"/>
+
+</RelativeLayout>

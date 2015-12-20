@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Android Multi Tool</string>
+    <string name="action_settings">Settings</string>
+    <string name="welcome_message">Welcome to the Android Multi Tool!\nSelect a tool below</string>
+    <string name="presentTellerButton">Present Teller</string>
+    <string name="mailAppButton">Awesome Mail App</string>
+    <string name="title_activity_present_teller">PresentTeller</string>
+    <string name="presentTellerTitle">Welcome to the Present Teller\nClick the button to get a random gift idea</string>
+    <string name="presentTellerMainButton">Random Gift</string>
+    <string name="title_activity_mail_app">MailApp</string>
+    <string name="mailAppTitle">Email Application</string>
+    <string name="mailAppSend">Send Mail</string>
+    <string name="title_activity_simple_database">SimpleDatabase</string>
+    <string name="simpleDatabaseButton">Simple Database</string>
+    <string name="simpleDatabaseTitle">Simple Database</string>
+    <string name="title_activity_student_detail">StudentDetail</string>
+    <string name="title_activity_image_downloader">ImageDownloader</string>
+</resources>

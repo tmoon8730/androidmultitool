@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MailApp.MailApp"
+    tools:showIn="@layout/activity_mail_app"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/mailAppTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/button_top_margin"
+        android:gravity="center"
+        android:textSize="@dimen/title_size"
+        android:text="@string/mailAppTitle"
+        android:textColor="@color/colorIcons"/>
+    <EditText
+        android:id="@+id/mailAppRecipient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mailAppTitle"
+        android:layout_marginTop="@dimen/button_top_margin"
+        android:layout_centerHorizontal="true"
+        android:hint="To:"/>
+
+    <EditText
+        android:id="@+id/mailAppSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mailAppRecipient"
+        android:layout_marginTop="@dimen/button_top_margin"
+        android:layout_centerHorizontal="true"
+        android:hint="Subject:"/>
+
+    <EditText
+        android:id="@+id/mailAppMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mailAppSubject"
+        android:layout_marginTop="@dimen/button_top_margin"
+        android:layout_centerHorizontal="true"
+        android:hint="Message:"/>
+
+    <Button
+        android:id="@+id/mailAppSendButton"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_below="@id/mailAppMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/button_top_margin"
+        android:text="@string/mailAppSend"
+        android:textColor="@color/colorPrimaryText"
+        android:background="@color/colorAccent"/>
+
+</RelativeLayout>
