@@ -52,4 +52,14 @@
         android:text="@string/simpleDatabaseButton"
         android:background="@color/colorAccent"/>
 
+    <Button
+        android:id="@+id/alarmManagerButton"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_below="@id/simpleDatabaseButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/button_top_margin"
+        android:text="@string/alarmManagerButton"
+        android:background="@color/colorAccent"/>
+
 </RelativeLayout>

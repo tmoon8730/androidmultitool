@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 
+import com.tea.big.androidmultitool.AlarmManager.AlarmManager;
 import com.tea.big.androidmultitool.MailApp.MailApp;
 import com.tea.big.androidmultitool.PresentTeller.PresentTeller;
 import com.tea.big.androidmultitool.SimpleDatabase.SimpleDatabase;
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     Button presentTellerButton;
     Button mailAppButton;
     Button simpleDatabaseButton;
+    Button alarmManager;
 
 
     @Override
@@ -32,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         presentTellerButton = (Button) findViewById(R.id.presentTellerButton);
         mailAppButton = (Button) findViewById(R.id.mailAppButton);
         simpleDatabaseButton = (Button) findViewById(R.id.simpleDatabaseButton);
+        alarmManager = (Button) findViewById(R.id.alarmManagerButton);
 
         presentTellerButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,6 +60,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        alarmManager.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(view.getContext(), AlarmManager.class);
+                startActivity(intent);
+            }
+        });
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {

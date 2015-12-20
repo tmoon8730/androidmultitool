@@ -15,4 +15,6 @@
     <string name="simpleDatabaseTitle">Simple Database</string>
     <string name="title_activity_student_detail">StudentDetail</string>
     <string name="title_activity_image_downloader">ImageDownloader</string>
+    <string name="title_activity_alarm_manager">AlarmManager</string>
+    <string name="alarmManagerButton">Alarm Manager</string>
 </resources>
