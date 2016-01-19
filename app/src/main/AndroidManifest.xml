@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.tea.big.androidmultitool">
-    <uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -39,12 +42,23 @@
             android:label="@string/title_activity_alarm_manager"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"></action>
-                <category android:name="android.intent.category.LAUNCHER"></category>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <receiver android:name="com.tea.big.androidmultitool.AlarmManager.AlarmManagerBroadcastReceiver">
-        </receiver>
+
+        <receiver android:name=".AlarmManager.AlarmManagerBroadcastReceiver"></receiver>
+
+        <activity
+            android:name=".CustomWebView.CustomWebView"
+            android:label="@string/title_activity_web_view"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.tea.big.androidmultitool.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

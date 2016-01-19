@@ -12,6 +12,7 @@ import android.view.MenuItem;
 import android.widget.Button;
 
 import com.tea.big.androidmultitool.AlarmManager.AlarmManager;
+import com.tea.big.androidmultitool.CustomWebView.CustomWebView;
 import com.tea.big.androidmultitool.MailApp.MailApp;
 import com.tea.big.androidmultitool.PresentTeller.PresentTeller;
 import com.tea.big.androidmultitool.SimpleDatabase.SimpleDatabase;
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     Button mailAppButton;
     Button simpleDatabaseButton;
     Button alarmManager;
+    Button customWebView;
 
 
     @Override
@@ -35,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         mailAppButton = (Button) findViewById(R.id.mailAppButton);
         simpleDatabaseButton = (Button) findViewById(R.id.simpleDatabaseButton);
         alarmManager = (Button) findViewById(R.id.alarmManagerButton);
+        customWebView = (Button) findViewById(R.id.webviewButton);
 
         presentTellerButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,6 +70,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        customWebView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), CustomWebView.class);
+                startActivity(intent);
+            }
+        });
+
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {

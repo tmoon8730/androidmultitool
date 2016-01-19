@@ -4,7 +4,7 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="title_size">20dp</dimen>
-    <dimen name="button_top_margin">30sp</dimen>
+    <dimen name="button_top_margin">20sp</dimen>
     <dimen name="button_width">200sp</dimen>
     <dimen name="button_height">50sp</dimen>
     <dimen name="present_button_dimensions">200sp</dimen>

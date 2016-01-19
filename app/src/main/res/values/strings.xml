@@ -17,4 +17,6 @@
     <string name="title_activity_image_downloader">ImageDownloader</string>
     <string name="title_activity_alarm_manager">AlarmManager</string>
     <string name="alarmManagerButton">Alarm Manager</string>
+    <string name="webviewButton">WebView</string>
+    <string name="title_activity_web_view">WebView</string>
 </resources>
